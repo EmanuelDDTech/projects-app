@@ -14,7 +14,7 @@
           />
           <!-- if there is a button in form, it will close the modal -->
           <div class="flex justify-end mt-5">
-            <button @click="$emit('close')" class="btn mr-4">Close</button>
+            <button type="button" @click="$emit('close')" class="btn mr-4">Close</button>
             <button class="btn btn-primary">Aceptar</button>
           </div>
         </form>
