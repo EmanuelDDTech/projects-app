@@ -17,6 +17,18 @@ export const useProjectsStore = defineStore('projects', () => {
     });
   };
 
+  const addTaskProject = (name: string) => {
+    if(name === '') return;
+
+    console.log(name)
+
+    const task = {
+      id: uuidv4(),
+      name: name,
+      completedAt: undefined,
+    }
+  }
+
   return {
     // Properties
     projects,
@@ -27,5 +39,6 @@ export const useProjectsStore = defineStore('projects', () => {
 
     // Actions
     addProject,
+    addTaskProject
   };
 });
