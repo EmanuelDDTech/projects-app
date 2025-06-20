@@ -8,4 +8,5 @@ export interface Task {
   id: string;
   name: string;
   completedAt?: Date;
+  taskCount?: number;
 }
